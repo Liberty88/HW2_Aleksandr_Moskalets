@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Nalabuten.Ah</title>
 </head>
 <body>
+<h1 class="page-title" hidden></h1>
 <header class="page-panel page-panel_header">
     <div class="header-header">
         <ul class="service-buttons">
@@ -44,13 +45,13 @@
             </li>
         </ul>
         <form action="base.php" class="search-block">
-            <input type="text" class="search-block__input-line" placeholder="Введите поисковую фразу">
+            <input type="search" class="search-block__input-line" placeholder="Введите поисковую фразу">
             <button class="search-block__search-button" title="Найти"></button>
         </form>
     </div>
     <div class="total-block">
-        <p class="total-block__total-price">7500р.</p>
-        <button class="total-block__buy-bottom" title="Перейти в корзину"></button>
+        <output class="total-block__total-price">7500р.</output>
+        <a href="#" class="total-block__buy-bottom" title="Перейти в корзину"></a>
     </div>
 </header>
 <nav class="page-nav">
@@ -77,7 +78,7 @@
         <ul class="owel-carousel__collection-list">
             <li class="owel-carousel__item">
                 <img src="img/main-pic.png" alt="Главные туфли" class="owel-carousel__item-pic">
-                <h1 class="owel-carousel__item-title">Labuten Cherry</h1>
+                <p class="owel-carousel__item-title">Labuten Cherry</p>
                 <p class="owel-carousel__secondary-title">НОВАЯ ВЕСЕННЯЯ КОЛЕКЦИЯ</p>
                 <p class="owel-carousel__item-info">Мы рады представить вам новую колекцию туфель от знаменитого дизайнера модельера Кристиана</p>
                 <button class="owel-carousel__buy-now-button">КУПИТЬ СЕЙЧАС</button>
@@ -102,84 +103,84 @@
     <div class="goods">
         <section class="goods-block">
             <h2 class="goods-block__block-title">НОВИНКИ</h2>
-            <ul class="goods-block_goods__collection">
-                <li class="goods-block__block_goods__collection__list">
-                    <div class="block_goods__collection__item" data-label="new">
-                        <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <p class="block_goods__item-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                    <div class="block_goods__collection__item" data-label="new">
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <p class="block_goods__item-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                    <div class="block_goods__collection__item" data-label="new">
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <p class="block_goods__item-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                    <div class="block_goods__collection__item" data-label="new">
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <p class="block_goods__item-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                </li>
-            </ul>
+            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">
+                <!--Лейблы зададим псевдоклассами, а их содержание атрибутами data-label-->
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
+            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
+            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
+            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
         </section>
         <section class="goods-block">
             <h2 class="goods-block__block-title">ТОВАРЫ СО СКИДКОЙ</h2>
-            <ul class="goods-block_goods__collection">
-                <li class="goods-block__block_goods__collection__list">
-                    <div class="block_goods__collection__item block_goods__collection__item_orange-label" data-label="-10%">
-                                                        <!--модификатор _orange-label изменит цвет лейбла-->
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <s class="block_goods__old-price">42700р.</s>
-                        <p class="block_goods__item-price block_goods__item-price_old-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                    <div class="block_goods__collection__item block_goods__collection__item_orange-label" data-label="-10%">
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <s class="block_goods__old-price">42700р.</s>
-                        <p class="block_goods__item-price block_goods__item-price_old-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                    <div class="block_goods__collection__item block_goods__collection__item_orange-label" data-label="-10%">
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <s class="block_goods__old-price">42700р.</s>
-                        <p class="block_goods__item-price block_goods__item-price_old-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                    <div class="block_goods__collection__item block_goods__collection__item_orange-label" data-label="-10%">
-                        <img src="img/shoes-item.png" alt="Туфли" class="block_goods__collection__item-pic">
-                        <p class="block_goods__item-name">Labuten-lady</p>
-                        <s class="block_goods__old-price">42700р.</s>
-                        <p class="block_goods__item-price block_goods__item-price_old-price">35000р.</p>
-                        <button class="block_goods__buy-button">в корзину</button>
-                        <button class="block_goods__favorite-button" title="Добавить в избранное"></button>
-                    </div>
-                </li>
-            </ul>
+            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">
+                <!--модификатор _discount-label изменит цвет лейбла-->
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <sup class="goods-block__second-price-block">
+                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>
+                </sup>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
+            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <sup class="goods-block__second-price-block">
+                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>
+                </sup>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
+            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <sup class="goods-block__second-price-block">
+                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>
+                </sup>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
+            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">
+                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">
+                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>
+                <sup class="goods-block__second-price-block">
+                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>
+                </sup>
+                <p class="goods-block__item-price">35000р.</p>
+                <button class="goods-block__buy-button">в корзину</button>
+                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>
+            </figure>
         </section>
     </div>
 </main>
 <aside class="page-aside">
-    <div class="page-aside__aside-title">Категории</div>
+    <h2 class="page-aside__aside-title">Категории</h2>
     <ul class="page-aside__aside-menu">
         <li class="page-aside__aside__list">
             <a href="#" class="page-aside__aside-item">Вечерние</a>
@@ -258,10 +259,10 @@
                 <a href="tel:+84996549879" class="page-panel__menu-item">Телефон: 8(499)654-98-79</a>
             </li>
             <li class="page-panel__menu-list">
-                <a href="mailto:info@nalabuten.ah" class="page-panel__menu-item">mailto: info@nalabuten.ah</a>
+                <a href="mailto:info@nalabuten.ah" class="page-panel__menu-item">info@nalabuten.ah</a>
             </li>
             <li class="page-panel__menu-list">
-                <a href="#" class="page-panel__menu-item">Адрес: г.Москва Фантаститечкий проезд д.234</a>
+                <adress href="#" class="page-panel__menu-item">Адрес: г.Москва Фантаститечкий проезд д.234</adress>
             </li>
         </ul>
     </div>
